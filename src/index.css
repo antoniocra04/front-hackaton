@@ -1,0 +1,637 @@
+body{
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  
+}
+
+.page_header {
+  display: flex;
+  align-items: center; /* Выравнивание по центру по вертикали */
+  margin: 30px;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.user_btn{
+  margin-left: auto; /* Поместить кнопку справа */
+  text-decoration: none; 
+  padding: 10px 35px; 
+  border-radius: 15px; 
+  background-color: #6C9EFF;
+  color: #FFFFFF;
+}
+
+.log{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.loguser{
+  text-decoration: none;
+  color: #6C9EFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+
+}
+
+.loguser2{
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+  text-decoration: none;
+  color: #797979;
+
+}
+
+.page_content{
+  margin: 30px;
+}
+
+.main_btn {
+  margin-right: 40px; /* Отступ между кнопками */
+  text-decoration: none; 
+  padding: 8px 10px; 
+  border: none; 
+  border-radius: 10px; 
+  font-family: "Inter", sans-serif; 
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+a{
+  cursor: pointer;
+}
+
+.main_btn:hover {
+  box-shadow: 0 0 15px #6C9EFF; /* Изменяем цвет при наведении */
+}
+
+.spacer {
+  display: inline-block;
+  width: 50px; 
+}
+
+.number {
+  color: #0b0b0b; 
+}
+
+.text {
+  color: #797979; 
+}
+
+.pp {
+  width: 100%;
+  position: fixed;
+  display: none;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 110;
+
+  backdrop-filter: blur(3px);
+}
+
+
+.pp__container {
+  min-width: 400px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 15px;
+  background-color: #FFFFFF;
+}
+
+.pp__title {
+  font-family: "Inter";
+  font-size: 17px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.pp__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input__name {
+  margin-bottom: 15px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.form-input__name  input{
+  font-size: 14px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #F5F5F5;
+}
+
+.form-input__description {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.form-input__description  textarea{
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #F5F5F5;
+  width: 100%;
+  resize: none;
+}
+
+.select-type select {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 50%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #767676;
+  background: #F5F5F5;
+  border-radius: 10px;
+  border: none;
+}
+
+.select-type select option{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #767676;
+}
+
+.select-view select {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 50%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #767676;
+  background: #F5F5F5;
+  border-radius: 10px;
+  border: none;
+}
+
+.select-view select option{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #767676;
+}
+
+.form__btns {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.create__btn {
+  display: block;
+  height: 31px;
+}
+
+.create__btn-link {
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 9px 16px 9px 17px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  outline: none;
+  text-align: center;
+  background-color: #6C9EFF;
+}
+
+.close__btn {
+  display: block;
+  height: 33px; 
+  margin-right: 20px; 
+}
+
+.close__btn-link {
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 9px 16px 9px 17px;
+  text-decoration: none;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  outline: none;
+  text-align: center;
+  background-color: #FF6C6C;
+}
+
+.hide-body {
+overflow: hidden;
+}
+
+.show-pp {
+display: flex;
+}
+
+* {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+body {
+  background: #FFFFFF;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 300px;
+}
+
+.form h1 {
+  margin-bottom: 54px;
+  padding: 0;
+  text-align: center;
+  color: #3E3E3E;
+  font-size: 25px;
+  line-height: 30.26px;
+}
+
+.form-input__email {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.form-input__email  input{
+  font-size: 14px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #F5F5F5;
+}
+
+
+.form-input__password {
+  margin-bottom: 23px;
+  text-align: center;
+
+}
+
+.form-input__password  input {
+  font-size: 14px;
+  padding: 9px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #F5F5F5;
+}
+
+.form-input {
+  text-align: center;
+
+}
+
+.form-button  button{
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background: #6C9EFF;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.form-button button:hover{
+  background: #6091f1;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.form a{
+  display: block;
+  padding: 0 0 30px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12.1px;
+  color: #767676;
+  margin-top: 10px;
+  text-decoration: none;
+
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #D9D9D98C;
+
+}
+
+.modal-content{
+  background-color: #FFFFFF;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  width: 30%;
+}
+
+.modal-content button{
+  padding: 7px;
+  width: 35%;
+  border-radius: 10px;
+  border: none;
+  background: #6C9EFF;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  transition: .3s;
+  float: right;
+}
+
+.modal-content button:hover{
+  background: #6091f1;
+}
+
+.modal-content p{
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20.57px;
+  color: #000000;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.body {
+    min-height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.events__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.audience-schedule__title {
+    font-family: "Inter";
+    font-size: 25px;
+    font-weight: 700;
+    color: #3E3E3E;
+    margin: 0;
+}
+
+.analytics {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    color: #797979;
+    align-self: center;
+    margin-right: 25px;
+    margin-left: auto;
+}
+
+.user-name {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 600;
+    color: #6C9EFF;
+    align-self: center;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+    margin-left: 30px;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 4px 4px 30px 0px #00000021;
+    width: 275px;
+    padding: 12px;
+    margin: 40px 40px 15px 0;
+}
+
+.event__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.event__head-title {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 600;
+    color: #585858;
+    min-width: 150px;
+}
+
+.event__head-time {
+    align-items: center;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 400;
+    color: #A0A0A0;
+    align-self: center;
+}
+
+.event-text {
+    display: inline-block;
+    margin: 10px 0 5px 0;
+    max-width: 195px;
+    font-family: "Inter";
+    font-weight: 300;
+    font-size: 12px;
+    color: #797979;
+}
+
+.event__btn {
+    display: block;
+    width: 109px;
+    height: 33px;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.event__btn-link {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 9px 16px 9px 17px;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+    outline: none;
+    text-align: center;
+    border: none;
+    background: #6C9EFF;
+    transition: .3s;
+    
+}
+
+.event__btn-link:hover{
+    background: #6091f1;
+}
+
+.event__btn-link-red {
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 9px 16px 9px 17px;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+    outline: none;
+    text-align: center;
+    border: none;
+    background: #FF6C6C;
+}
+
+.event-add-btn {
+  position: absolute;
+  top: 80vh;
+  left: 90vw;    
+}
+
+.plus {
+    cursor: pointer;
+    display: block;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #6C9EFF;
+}
+
+.plus::before {
+    content: "+";
+    height: 50px;
+    width: 50px;
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-family: courier;
+    color: white;
+}
+
+* {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+body {
+  background: #FFFFFF;
+  position: relative;
+}
+
+.block {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.block h1 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30.26px;
+  color: #3E3E3E;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.block h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  color: #585858;
+}
+
+.block select {
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 50%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #767676;
+  background: #F5F5F5;
+  border-radius: 10px;
+  border: none;
+}
+
+.block select option{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #767676;
+  
+}
+
+.block p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  color: #585858;
+}
